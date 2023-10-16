@@ -13,8 +13,8 @@
 	System.out.println(q3);
 	System.out.println(q4);
 	st.execute(q1);
-	//st.execute(q2);
-	//st.execute(q3);
+	st.execute(q2);
+	st.execute(q3);
 	st.execute(q4);
 		
 	System.out.println("created table");
