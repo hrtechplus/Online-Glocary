@@ -20,8 +20,8 @@ color:white;}
 <title>Error</title>
 </head>
 <body>
-<h1>Some thing went Wrong!</h1>
-<h1>So go for login! Try again!</h1>
-<h1><a href="">login</a></h1>
+<h1>You have been logged out.</h1>
+<h1>Try to re-log to the system</h1>
+<h1><a href="./login">login</a></h1>
 </body>
 </html>

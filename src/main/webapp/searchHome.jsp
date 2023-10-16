@@ -25,9 +25,10 @@
 
 <%
 int z=0;
+String search=request.getParameter("search");
 try{
 	
-	String search=request.getParameter("search");
+	// String search=request.getParameter("search");
 	Connection con=connectionProvider.getcon();
 	Statement st=con.createStatement();
 	ResultSet rs=st.executeQuery("select * from product where name like '%"+search+"%' or catagory like '%"+search+"%' and active='Yes'");
@@ -55,7 +56,7 @@ catch(Exception e){
 <%
 if(z==0){
 %>	
-	<h1 style="color:white; text-align: center;">Nothing to show</h1>
+	<h1 style="color:white; text-align: center;">No item(s) "<%= search %>" </h1>
 <%} %>
       <br>
       <br>
