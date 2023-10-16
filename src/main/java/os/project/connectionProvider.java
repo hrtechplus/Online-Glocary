@@ -4,7 +4,7 @@ public class connectionProvider {
 	public static Connection getcon(){
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/school?autoReconnect=true&useSSL=false","root","root");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/sliit?autoReconnect=true&useSSL=false","root","root");
 			return conn;
 			
 		}

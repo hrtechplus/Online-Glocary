@@ -1,3 +1,3 @@
  <div class="footer">
-          <p>All Right Reserved @ Code With V4</p>
+          <p>2023 All Right Reserved. 2022 REGULAR BATCH GROUP 8.2 </p>
       </div>

@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
+<title>SLIIT DEGREE GLOCERY CENTER</title>
 <style>
 h3
 {
@@ -16,7 +16,7 @@ h3
 }
 </style>
 </head>
-<body bgcolor="#99ccff">
+<body bgcolor="#FFF">
 <div style="color: white; text-align: center; font-size: 30px;">Home <i class="fa fa-institution"></i></div>
 <%
 String msg=request.getParameter("msg");
@@ -46,7 +46,7 @@ if("invalid".equals(msg)){
             <th scope="col">ID</th>
             <th scope="col">Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="fa fa-inr"></i> Price</th>
+            <th scope="col"> Price</th>
             <th scope="col">Add to cart <i class='fas fa-cart-plus'></i></th>
           </tr>
         </thead>

@@ -12,7 +12,7 @@
     <%
     String email=session.getAttribute("email").toString();
     %>
-            <center><h2>Online shopping (Code With V4)</h2></center>
+            <center><h2>SLIIT DEGREE GLOCERY</h2></center>
             <h2><a href=""><%out.println(email); %> <i class='fas fa-user-alt'></i></a></h2>
             <a href="home.jsp">Home<i class="fa fa-institution"></i></a>
             <a href="myCart.jsp">My Cart<i class='fas fa-cart-arrow-down'></i></a>
