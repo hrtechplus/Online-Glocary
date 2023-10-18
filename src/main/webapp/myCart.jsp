@@ -63,7 +63,7 @@ try{
 %>
 
           <tr>
-            <th scope="col" style="background-color: yellow;">Total: <i class="fa fa-inr"></i><%out.println(total); %>  </th>
+            <th scope="col" style="background-color: yellow;">Total: <small class=" fs-6">Rs</small><%out.println(total); %>  </th>
             <% if(total>0){ %><th scope="col"><a href="addressPaymentForOrder.jsp">Proceed to order</a></th><%} %>
           </tr>
         </thead>
@@ -72,7 +72,7 @@ try{
           <th scope="col">S.No</th>
             <th scope="col">Product Name</th>
             <th scope="col">Category</th>
-            <th scope="col"><i class="fa fa-inr"></i> price</th>
+            <th scope="col"><small class=" fs-6">(Rs)</small> price</th>
             <th scope="col">Quantity</th>
             <th scope="col">Sub Total</th>
             <th scope="col">Remove <i class='fas fa-trash-alt'></i></th>
