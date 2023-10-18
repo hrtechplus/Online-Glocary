@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="d-flex justify-content-between align-items-center py-3 bg-light">
-        <h2 class="my-0">Change Details <i class="fa fa-edit"></i></h2>
+        <h2 class="my-0 mx-3">Change Details <i class="fa fa-edit"></i></h2>
         <div class="d-flex align-items-center">
             <% String email = session.getAttribute("email").toString(); %>
             <a href="home.jsp" class="btn btn-outline-primary me-2"><i class='fas fa-arrow-circle-left'></i> Back</a>
@@ -21,8 +21,8 @@
     <ul class="nav nav-pills nav-justified mb-3">
         <li class="nav-item"><a href="changePassword.jsp" class="nav-link">Change Password <i class='fas fa-key'></i></a></li>
         <li class="nav-item"><a href="addChangeAddress.jsp" class="nav-link">Add or change Address <i class='fas fa-map-marker-alt'></i></a></li>
-        <li class="nav-item"><a href="changeSecurityQuestion.jsp" class="nav-link">Change Security Question <i class="fa fa-repeat"></i></a></li>
-        <li class="nav-item"><a href="changeMobileNumber.jsp" class="nav-link">Change Mobile Number <i class='fas fa-phone'></i></a></li>
+        <li class="nav-item"><a href="changeSecurityQuestion.jsp" class="nav-link">Change Security Question <i class="fa fa-repeater"></i></a></li>
+        <li class="nav-item"><a href="changeMobileNumber.jsp" class="nav-link">Change Mobile Number <i class='fas mobile'></i></a></li>
     </ul>
 
     </div>
