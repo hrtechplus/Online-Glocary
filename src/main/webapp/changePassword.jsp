@@ -13,7 +13,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-<div class="container shadow p-4 rounded-lg mx-auto" style="max-width: 400px;">
+<div class="container shadow p-4 rounded-lg mx-auto" style="max-width: 800px;">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <h1 class="mb-4">Change Password</h1>
