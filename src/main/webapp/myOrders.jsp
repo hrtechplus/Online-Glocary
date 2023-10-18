@@ -19,9 +19,9 @@
             <th scope="col">S.No</th>
             <th scope="col">Product Name</th>
             <th scope="col">category</th>
-            <th scope="col"><i class="fa fa-inr"></i>  Price</th>
+            <th scope="col"><i class="fa fa-lkr">Rs</i>  Price</th>
             <th scope="col">Quantity</th>
-            <th scope="col"><i class="fa fa-inr"></i> Sub Total</th>
+            <th scope="col"><i class="fa fa-lkr">Rs</i> Sub Total</th>
             <th scope="col">Order Date</th>
              <th scope="col">Expected Delivery Date</th>
              <th scope="col">Payment Method</th>
@@ -48,9 +48,9 @@ try{
             <td><% out.println(sno); %></td>
             <td><%=rs.getString(17) %></td>
             <td><%=rs.getString(18) %></td>
-            <td><i class="fa fa-inr"></i> <%=rs.getString(19) %> </td>
+            <td><i class="fa fa-lkr">Rs</i> <%=rs.getString(19) %> </td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-inr"></i> <%=rs.getString(5) %></td>
+            <td><i class="fa fa-lkr">Rs</i> <%=rs.getString(5) %></td>
              <td><%=rs.getString(11) %></td>
               <td><%=rs.getString(12) %></td>
                <td><%=rs.getString(13) %></td>

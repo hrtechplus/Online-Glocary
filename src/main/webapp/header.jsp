@@ -27,7 +27,7 @@
         <form action="searchHome.jsp" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
         	<div class="d-flex justify-content-evenly px-1">
         	          <input type="text" class="form-control mx-1" placeholder="Search">
-          				<button type="submit" class="btn btn-primary">Search <i class="fa fa-search d-flex justify-content-evenly"></i></button>
+          				<button type="submit" class="btn btn-primary">Search<i class="fa fa-search d-flex justify-content-evenly"></i></button>
         	</div>
 
         </form>
