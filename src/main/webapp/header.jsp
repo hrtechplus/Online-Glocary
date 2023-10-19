@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style >
+		@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+	</style>
   <link rel="stylesheet" href="css/home-style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -15,13 +18,13 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="home.jsp" class="nav-link px-2 text-white mx-1">Home <i class="fa fa-institution"></i></a></li>
-          <li><a href="myCart.jsp" class="nav-link px-2 text-white mx-1">My Cart <i class='fas fa-cart-arrow-down'></i></a></li>
+          <li><a href="home.jsp" class="nav-link px-2 text-white mx-1"><i class="bi bi-house"></i>Home </a></li>
+          <li><a href="myCart.jsp" class="nav-link px-2 text-white mx-2"><i class="bi bi-cart "></i>My Cart </a></li>
           <li><a href="myOrders.jsp" class="nav-link px-2 text-white mx-1">My Orders <i class='fab fa-elementor'></i></a></li>
           <li><a href="changeDetails.jsp" class="nav-link px-2 text-white mx-1">Change Details <i class="fa fa-edit"></i></a></li>
           <li><a href="messageUs.jsp" class="nav-link px-2 text-white mx-1">Message Us <i class='fas fa-comment-alt'></i></a></li>
           <li><a href="about.jsp" class="nav-link px-2 text-white mx-1">About <i class="fa fa-address-book"></i></a></li>
-          <li><a href="logout.jsp" class="nav-link px-2 text-white mx-1">Logout <i class='fas fa-share-square'></i></a></li>
+          <li><a href="logout.jsp" class="nav-link px-2 text-white mx-1"><i class="bi bi-person"></i>Logout </a></li>
         </ul>
 
         <form action="searchHome.jsp" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">

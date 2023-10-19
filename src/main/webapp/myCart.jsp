@@ -90,7 +90,7 @@ try{
             <td><%=rs1.getString(2) %></td>
             <td><%=rs1.getString(3) %></td>
             <td><i class="fa fa-lkr">Rs</i><%=rs1.getString(4) %> </td>
-            <td><a href="incDecQuantity.jsp?id=<%= rs1.getString(1) %>&quantity=inc"><i class='fas fa-plus-circle'></i></a> <%=rs1.getString(8) %> <a href="incDecQuantity.jsp?id=<%=rs1.getString(1)%>&quantity=dec"><i class='fas fa-minus-circle'></i></a></td>
+            <td><a href="incDecQuantity.jsp?id=<%= rs1.getString(1) %>&quantity=inc"><i class="bi bi-plus"></i></a> <%=rs1.getString(8) %> <a href="incDecQuantity.jsp?id=<%=rs1.getString(1)%>&quantity=dec"><i class="bi bi-dash"></i></a></td>
             <td><i class="fa fa-lkr">RS</i><%=rs1.getString(10) %> </td>
             <td><a href="removeFromCart.jsp?id=<%=rs1.getString(1)%>">Remove <i class='fas fa-trash-alt'></i></a></td>
           </tr>
