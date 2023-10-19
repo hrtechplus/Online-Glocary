@@ -17,15 +17,15 @@
   <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <h1 class="me-lg-auto text-white">SLIIT DEGREE GROCERY CENTER</h1>
+        <h1 class="me-lg-auto text-white display-1 fs-4 ">SLIIT DEGREE GROCERY CENTER [admin]</h1>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="addNewProduct.jsp" class="nav-link px-2 text-white">Add New Product <i class="bi bi-plus-lg"></i></a></li>
-          <li><a href="allProductEditProduct.jsp" class="nav-link px-2 text-white">All Products & Edit Products <i class='fab fa-elementor'></i></a></li>
-          <li><a href="messagesReceived.jsp" class="nav-link px-2 text-white">Messages Received <i class="bi bi-envelope"></i></a></li>
-          <li><a href="ordersReceived.jsp" class="nav-link px-2 text-white">Orders Received <i class="fas fa-archive"></i></a></li>
-          <li><a href="cancelOrders.jsp" class="nav-link px-2 text-white">Cancel Orders <i class="bi bi-x-circle  color: cornflowerblue;"></i></a></li>
-          <li><a href="deliveredOrders.jsp" class="nav-link px-2 text-white">Delivered Orders <i class="bi bi-truck"></i></a></li>
-          <li><a href="../logout.jsp" class="nav-link px-2 text-white">Logout <i class="bi bi-person"></i></a></li>
+          <li><a href="addNewProduct.jsp" class="nav-link px-2 text-white"> <i class="bi bi-plus-lg"></i> Add New Product </a></li>
+          <li><a href="allProductEditProduct.jsp" class="nav-link px-2 text-white"><i class="bi bi-list mx-1"></i>All Products & Edit Products </a></li>
+          <li><a href="messagesReceived.jsp" class="nav-link px-2 text-white"><i class="bi bi-envelope mx-1"></i>Messages Received </a></li>
+          <li><a href="ordersReceived.jsp" class="nav-link px-2 text-white"><i class="bi bi-file-arrow-down mx-1"></i>Orders Received </a></li>
+          <li><a href="cancelOrders.jsp" class="nav-link px-2 text-white"><i class="bi bi-x-circle mx-1  color: cornflowerblue;"></i>Cancel Orders </a></li>
+          <li><a href="deliveredOrders.jsp" class="nav-link px-2 text-white"><i class="bi bi-truck mx-1"></i>Delivered Orders </a></li>
+          <li><a href="../logout.jsp" class="nav-link px-2 text-white"><i class="bi bi-person mx-1"></i>Logout </a></li>
         </ul>
       </div>
     </div>
