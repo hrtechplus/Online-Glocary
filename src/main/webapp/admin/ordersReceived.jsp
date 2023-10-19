@@ -36,7 +36,7 @@ if("invalid".equals(msg)){
           <th>Mobile Number</th>
             <th scope="col">Product Name</th>
             <th scope="col">Quantity</th>
-            <th scope="col"><i class="fa fa-inr"></i> Sub Total</th>
+            <th scope="col"><i class="fa fa-lkr">Rs</i> Sub Total</th>
             <th>Address</th>
             <th>City</th>
             <th>State</th>
