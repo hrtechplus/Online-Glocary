@@ -62,7 +62,6 @@
                     </div>
                 </div>
 
-               
                 <div class="row mb-3">
                     <div class="col-md-6">
                         <label for="state" class="form-label">State</label>
@@ -125,7 +124,7 @@
 </div>
 
 <%
-}
+
 }
 catch(Exception e)
 {System.out.println(e);}
@@ -135,3 +134,4 @@ catch(Exception e)
 </body>
 </html>
 
+               
