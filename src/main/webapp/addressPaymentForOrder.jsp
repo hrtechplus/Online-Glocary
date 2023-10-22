@@ -51,12 +51,87 @@
         <div class="col-md-4">
             <h2 class="mb-4">Order Details</h2>
             <form action="addressPaymentForOrderAction.jsp" method="post" class="needs-validation" novalidate>
-                <div class="mb-3">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" value="<%=rs2.getString(7) %>" required>
-                    <div class="form-text text-danger">*If there is no address it means that you did not set your address!</div>
-                    <div class="form-text text-danger">*This address will also be updated to your profile</div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" value="<%=rs2.getString(7) %>" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" name="city" class="form-control" id="city" placeholder="Enter City" value="<%=rs2.getString(8) %>" required>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label for="city" class="form-label">City</label>
-                    <input type="text" name="city" class="form-control" id="city" placeholder="Enter City" value="<%=rs2.getString
+
+               
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" name="state" class="form-control" id="state" placeholder="Enter State" value="<%=rs2.getString(9) %>" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" name="country" class="form-control" id="country" placeholder="Enter Country" value="<%=rs2.getString(10) %>" required>
+                    </div>
+                </div>
+
+                <div class="alert alert-warning">
+                    <p class="mb-0">* If there is no address, it means that you did not set your address!</p>
+                    <p class="mb-0">* This address will also be updated to your profile</p>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <h3>Select way of Payment</h3>
+                        <select class="form-select" name="paymentMethod" aria-label="Payment Method">
+                            <option value="Cash on delivery (COD)">Cash on delivery (COD)</option>
+                            <option value="Online Payment">Online Payment</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Pay online on this codeWithV4@pay.com</h3>
+                        <input type="text" name="trnsactionId" class="form-control" placeholder="Enter Transaction ID">
+                    </div>
+                </div>
+
+                <div class="alert alert-warning">
+                    <p class="mb-0">* If you select online Payment, then enter your transaction ID here; otherwise, leave this blank</p>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <h3>Mobile Number</h3>
+                        <input type="text" name="mobileNumber" class="form-control" placeholder="Enter Mobile Number" value="<%=rs2.getString(3) %>" required>
+                        <p class="mb-0">* This mobile number will also be updated to your profile</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="alert alert-danger">
+                            <p class="mb-0">* If you enter the wrong transaction ID, your order may be canceled!</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Proceed to Generate Bill and Save <i class='far fa-arrow-alt-circle-right'></i></button>
+
+                        <div class="alert alert-warning">
+                            <p class="mb-0">* Fill the form correctly</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<%
+}
+}
+catch(Exception e)
+{System.out.println(e);}
+
+%>
+
+</body>
+</html>
+
