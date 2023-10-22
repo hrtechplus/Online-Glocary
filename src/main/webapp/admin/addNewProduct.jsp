@@ -42,7 +42,7 @@ try {
 }
 %>
 
-<form action="addNewProductAction.jsp" method="post" class="container py-5">
+<form action="addNewProductAction.jsp" method="post" class="container py-5 shadow " style="max-width:800px">
     <div class="row">
         <div class="col-md-6">
             <h3 class="mb-3">Product ID: <%out.println(id); %></h3>
@@ -77,7 +77,7 @@ try {
         </div>
     </div>
 
-    <div class="d-grid gap-2">
+    <div class="d-grid gap-2 mt-3">
         <button type="submit" class="btn btn-primary">Save <i class='far fa-arrow-alt-circle-right'></i></button>
     </div>
 </form>
