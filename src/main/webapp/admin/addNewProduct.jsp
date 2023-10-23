@@ -23,7 +23,7 @@ if ("done".equals(msg)) {
 if ("wrong".equals(msg)) {
 %>
 <div class="alert alert-danger" role="alert">
-  Some thing went wrong! Try Again!
+  Something went wrong! Try Again!
 </div>
 <%} %>
 

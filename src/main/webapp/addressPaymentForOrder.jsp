@@ -24,7 +24,7 @@
                         <th scope="col">S.No</th>
                         <th scope="col">Product Name</th>
                         <th scope="col">Category</th>
-                        <th scope="col"><i class="fa fa-inr"></i> Price</th>
+                        <th scope="col"><i class="fa fa-lkr"></i> Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Sub Total</th>
                     </tr>
