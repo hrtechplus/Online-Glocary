@@ -16,9 +16,9 @@ import com.sliit.login.Product;
 public class StudentServlet extends HttpServlet {
 
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/schooln";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/sliit";
     private static final String USER = "root";
-    private static final String PASS = "password";
+    private static final String PASS = "root";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,8 +34,8 @@ public class StudentServlet extends HttpServlet {
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
-                String catagory = rs.getInt("catagory");
-                int price = rs.getString("price");
+                String catagory = rs.getString("catagory");
+                int price = rs.getInt("price");
                 String active = rs.getString("price");
 
                 Product student = new Product(id, name,catagory, price, active);
