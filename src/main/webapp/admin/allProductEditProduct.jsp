@@ -38,6 +38,7 @@ if("wrong".equals(msg)){
             <th scope="col"><i class="fa fa-lkr">Rs</i> Price</th>
             <th scope="col">Status</th>
             <th scope="col">Edit <i class='fas fa-pen-fancy'></i></th>
+            <th scope="col">Delete <i class='fas fa-pen-fancy'></i></th>
           </tr>
         </thead>
         <tbody>
@@ -56,6 +57,7 @@ if("wrong".equals(msg)){
             <td><i class="fa fa-lkr">Rs</i> <%=rs.getString(4) %></td>
             <td><%=rs.getString(5) %></td>
             <td><a href="editProduct.jsp?id=<%=rs.getString(1) %>" class="btn btn-sm btn-primary">Edit <i class='fas fa-pen-fancy'></i></a></td>
+            <td><a href="deleteProduct.jsp?id=<%=rs.getString(1) %>" class="btn btn-sm btn-danger">Delete <i class='fas fa-pen-fancy'></i></a></td>
           </tr>
          <%
        	}

@@ -6,18 +6,12 @@
 String id=request.getParameter("id");
 id = id.trim();
 int idInt = Integer.parseInt(id);
-String name=request.getParameter("name");
-String category=request.getParameter("category");
-String price=request.getParameter("price");
+
 String active=request.getParameter("active");
 try{
 	Connection con=connectionProvider.getcon();
 	Statement st=con.createStatement();
-	st.executeUpdate("update product set name='"+name+"',catagory='"+category+"',price='"+price+"',active='"+active+"' where id='"+id+"'");
-	if(active.equals("No")){
-		
-		st.executeUpdate("delete from card where  where id="+idInt+"");
-	}
+	st.executeUpdate("delete from product WHERE id=" + idInt);
 	response.sendRedirect("allProductEditProduct.jsp?msg=done");
 
 }
