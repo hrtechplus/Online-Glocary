@@ -1,7 +1,7 @@
     body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25;
-  background-color: #f5ce64;
+  background-color: rgb(255, 255, 255);
 }
 
 /*footer*/
@@ -31,7 +31,7 @@
 }
 
 input[type=text]:focus, textarea:focus,button:focus{
-  outline: 4px solid orange;
+  outline: 4px solid rgb(255, 0, 0);
   background-color:rgb(224, 255, 219);     /* oranges! yey */
 }
 
@@ -68,7 +68,7 @@ h3
 }
 .alert
 {
-	color:yellow;
+	color:rgb(255, 0, 0);
 }
 
 .profile-style

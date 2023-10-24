@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bill.css">
+
 <title>Bill</title>
 </head>
-<body>
+<body bgcolor="white">
 
 <%
 String email=session.getAttribute("email").toString();
@@ -90,33 +90,34 @@ try{
 	
 	<br>
 	
-<table id="customers">
-<h3>Product Details</h3>
-  <tr>
-    <th>S.No</th>
-    <th>Product Name</th>
-    <th>category</th>
-    <th>Price</th>
-    <th>Quantity</th>
-     <th>Sub Total</th>
-  </tr>
-  <%
-  ResultSet rs3=st.executeQuery("select * from card inner join product where card.product_id=product.id and card.email='"+email+"' and card.status='bill'");
-  while(rs3.next()){
-	  sno=sno+1;
-  
-  %>
-  <tr>
-    <td><%out.println(sno); %></td>
-    <td><%=rs3.getString(17) %></td>
-    <td><%=rs3.getString(18) %></td>
-    <td><%=rs3.getString(19) %></td>
-    <td><%=rs3.getString(3) %></td>
-     <td><%=rs3.getString(5) %></td>
-  </tr>
-  <tr>
-<%} %>
-</table>
+<div class="mx-auto">
+  <table id="customers" class="shadow p-5" style="max-width:800px">
+    <h3>Product Details</h3>
+    <tr>
+      <th>S.No</th>
+      <th>Product Name</th>
+      <th>category</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Sub Total</th>
+    </tr>
+    <%
+    ResultSet rs3=st.executeQuery("select * from card inner join product where card.product_id=product.id and card.email='"+email+"' and card.status='bill'");
+    while(rs3.next()){
+      sno=sno+1;
+    %>
+    <tr>
+      <td><%out.println(sno); %></td>
+      <td><%=rs3.getString(17) %></td>
+      <td><%=rs3.getString(18) %></td>
+      <td><%=rs3.getString(19) %></td>
+      <td><%=rs3.getString(3) %></td>
+      <td><%=rs3.getString(5) %></td>
+    </tr>
+    <%} %>
+  </table>
+</div>
+
 <div class="row mt-5">
   <div class="col-12 d-flex justify-content-center">
     <div class="col-6">
