@@ -90,7 +90,7 @@ try{
 	
 	<br>
 	
-<div class="mx-auto">
+<div class="mx-5">
   <table id="customers" class="shadow p-5" style="max-width:800px">
     <h3>Product Details</h3>
     <tr>
@@ -119,7 +119,7 @@ try{
 </div>
 
 <div class="row mt-5">
-  <div class="col-12 d-flex justify-content-center">
+  <div class="col-12 d-flex justify-content-center mx-5"  style="max-width:800px">
     <div class="col-6">
       <h3>Total: <%out.println(total); %> </h3>
     </div>
