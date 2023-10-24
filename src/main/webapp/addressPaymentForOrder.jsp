@@ -1,137 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Address and Payment for Order</title>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="css/addressPaymentForOrder-style.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<title>order</title>
+<style >
+		@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+	</style>
+  <link rel="stylesheet" href="css/home-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
 </head>
 <body>
-<div class="container py-5">
-    <div class="row">
-        <div class="col-md-8">
-            <h2 class="mb-4">Order Summary</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col"><a href="myCart.jsp"><i class='fas fa-arrow-circle-left'> Back</i></a></th>
-                        <th scope="col" style="background-color: yellow;">Total: <i class="fa fa-inr"></i> <%out.println(total); %></th>
-                    </tr>
-                </thead>
-                <thead>
-                    <tr>
-                        <th scope="col">S.No</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Category</th>
-                        <th scope="col"><i class="fa fa-lkr"></i> Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Sub Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <%
-                    int sno = 0;
-                    ResultSet rs1 = st.executeQuery("select * from product inner join card on product.id=card.product_id and card.email='"+email+"' and card.address is NULL");
-                    while(rs1.next()){
-                        sno++;
-                    %>
-                        <tr>
-                            <td><% out.println(sno); %></td>
-                            <td><%=rs1.getString(2) %></td>
-                            <td><%=rs1.getString(3) %></td>
-                            <td><i class="fa fa-inr"></i> <%=rs1.getString(4) %></td>
-                            <td><%=rs1.getString(8) %></td>
-                            <td><i class="fa fa-inr"></i><%=rs1.getString(10) %> </td>
-                        </tr>
-                    <%}%>
-                </tbody>
-            </table>
-        </div>
-        <div class="col-md-4">
-            <h2 class="mb-4">Order Details</h2>
-            <form action="addressPaymentForOrderAction.jsp" method="post" class="needs-validation" novalidate>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" name="address" class="form-control" id="address" placeholder="Enter Address" value="<%=rs2.getString(7) %>" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="city" class="form-label">City</label>
-                        <input type="text" name="city" class="form-control" id="city" placeholder="Enter City" value="<%=rs2.getString(8) %>" required>
-                    </div>
-                </div>
+<br>
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">
+        <a href=""><i class='fas fa-arrow-circle-left'></i> Back</a>
+      </th>
+      <th scope="col" class="bg-warning text-center">
+        Total: <i class="fa fa-lkr"></i>
+      </th>
+    </tr>
+  </thead>
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Category</th>
+      <th scope="col" class="text-center"><i class="fa fa-lkr"></i> Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Sub Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="text-center"><i class="fa fa-inr"></i> ></td>
+      <td></td>
+      <td><i class="fa fa-lkr">Rs</i> </td>
+    </tr>
+  </tbody>
+</table>
 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="state" class="form-label">State</label>
-                        <input type="text" name="state" class="form-control" id="state" placeholder="Enter State" value="<%=rs2.getString(9) %>" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="country" class="form-label">Country</label>
-                        <input type="text" name="country" class="form-control" id="country" placeholder="Enter Country" value="<%=rs2.getString(10) %>" required>
-                    </div>
-                </div>
+      
+<hr style="width: 100%">
 
-                <div class="alert alert-warning">
-                    <p class="mb-0">* If there is no address, it means that you did not set your address!</p>
-                    <p class="mb-0">* This address will also be updated to your profile</p>
-                </div>
+ <div class="left-div">
+ <h3>Enter Address</h3>
 
-                <hr class="my-4">
+ </div>
 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <h3>Select way of Payment</h3>
-                        <select class="form-select" name="paymentMethod" aria-label="Payment Method">
-                            <option value="Cash on delivery (COD)">Cash on delivery (COD)</option>
-                            <option value="Online Payment">Online Payment</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6">
-                        <h3>Pay online on this codeWithV4@pay.com</h3>
-                        <input type="text" name="trnsactionId" class="form-control" placeholder="Enter Transaction ID">
-                    </div>
-                </div>
+<div class="right-div">
+<h3>Enter city</h3>
 
-                <div class="alert alert-warning">
-                    <p class="mb-0">* If you select online Payment, then enter your transaction ID here; otherwise, leave this blank</p>
-                </div>
+</div> 
 
-                <hr class="my-4">
+<div class="left-div">
+<h3>Enter State</h3>
 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <h3>Mobile Number</h3>
-                        <input type="text" name="mobileNumber" class="form-control" placeholder="Enter Mobile Number" value="<%=rs2.getString(3) %>" required>
-                        <p class="mb-0">* This mobile number will also be updated to your profile</p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="alert alert-danger">
-                            <p class="mb-0">* If you enter the wrong transaction ID, your order may be canceled!</p>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Proceed to Generate Bill and Save <i class='far fa-arrow-alt-circle-right'></i></button>
-
-                        <div class="alert alert-warning">
-                            <p class="mb-0">* Fill the form correctly</p>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
 </div>
 
-<%
+<div class="right-div">
+<h3>Enter country</h3>
 
-}
-catch(Exception e)
-{System.out.println(e);}
+</div>
+<h3 style="color: red">*If there is no address its mean that you did not set you address!</h3>
+<h3 style="color: red">*This address will also updated to your profile</h3>
+<hr style="width: 100%">
+<div class="left-div">
+<h3>Select way of Payment</h3>
+ 
+</div>
 
-%>
+<div class="right-div">
+<h3>Pay online on this btechdays@pay.com</h3>
+
+<h3 style="color: red">*If you select online Payment then enter you transaction ID here otherwise leave this blank</h3>
+</div>
+<hr style="width: 100%">
+
+<div class="left-div">
+<h3>Mobile Number</h3>
+
+<h3 style="color: red">*This mobile number will also updated to your profile</h3>
+</div>
+<div class="right-div">
+<h3 style="color: red">*If you enter wrong transaction id then your order will we can cancel!</h3>
+<i class='far fa-arrow-alt-circle-right'></i>
+<h3 style="color: red">*Fill form correctly</h3>
+</div>
+
+
+      <br>
+      <br>
+      <br>
 
 </body>
 </html>
-
-               
