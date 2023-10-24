@@ -13,7 +13,8 @@ try{
 	Statement st=con.createStatement();
 	st.executeUpdate("update product set name='"+name+"',catagory='"+category+"',price='"+price+"',active='"+active+"' where id='"+id+"'");
 	if(active.equals("No")){
-		st.executeUpdate("delete from card productid='"+id+"' and address is NULL");
+		int idInt =Integer.parseInt(id);
+		st.executeUpdate("delete from card where id =" +id);
 	}
 	response.sendRedirect("allProductEditProduct.jsp?msg=done");
 

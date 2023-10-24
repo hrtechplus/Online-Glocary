@@ -23,7 +23,7 @@ if("done".equals(msg)){
 </div>
 <%} %>
 <%
-if("worng".equals(msg)){
+if("wrong".equals(msg)){
 %>
 <div class="alert alert-danger" role="alert">
   Some thing went wrong! Try again!
