@@ -46,10 +46,10 @@ public class GetUsers extends HttpServlet {
             ResultSet rs = stmt.executeQuery("SELECT * FROM product");
 
             while (rs.next()) {
-                int id = rs.getInt("id");
+            	String id = rs.getString("id");
                 String name = rs.getString("name");
                 String catagory = rs.getString("catagory");
-                int price = rs.getInt("price");
+                String price = rs.getString("price");
                 String active = rs.getString("price");
 
                 Products productobj = new Products(id, name,catagory, price, active);
