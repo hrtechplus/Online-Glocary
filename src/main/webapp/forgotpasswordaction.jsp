@@ -10,17 +10,19 @@
 	String newpassword=request.getParameter("password");
 	
 	
-	int check=0;
+	int check=1;
 	try{
 		Connection con=connectionProvider.getcon();
 		Statement st=con.createStatement();
 		ResultSet rs=st.executeQuery("select * from user where email='"+email+"' and MobileNumber='"+mobilenumber+"' and securityQuetion='"+securityQuetion+"' and answer='"+answer+"' ");
-		if(rs.next()){
-			check=1;
+		while(rs.next()){
+			
 			st.executeUpdate("update user set password='"+newpassword+"' where email='"+email+"'");
 			response.sendRedirect("forgotPassword.jsp?msg=done");
+			check = 0;
+			break;
 		}
-		if(check==0){
+		if(check==1){
 			response.sendRedirect("forgotPassword.jsp?msg=invalid");
 		}
 	}
