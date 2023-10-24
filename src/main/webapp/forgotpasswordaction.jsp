@@ -15,7 +15,7 @@
 		Connection con=connectionProvider.getcon();
 		Statement st=con.createStatement();
 		ResultSet rs=st.executeQuery("select * from user where email='"+email+"' and MobileNumber='"+mobilenumber+"' and securityQuetion='"+securityQuetion+"' and answer='"+answer+"' ");
-		while(rs.next()){
+		if(rs.next()){
 			check=1;
 			st.executeUpdate("update user set password='"+newpassword+"' where email='"+email+"'");
 			response.sendRedirect("forgotPassword.jsp?msg=done");
