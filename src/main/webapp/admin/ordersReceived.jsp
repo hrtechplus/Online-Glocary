@@ -46,7 +46,7 @@ if("invalid".equals(msg)){
             <th scope="col">Order Date</th>
              <th scope="col">Expected Delivery Date</th>
              <th scope="col">Payment Method</th>
-              <th scope="col">T-ID</th>
+              <th scope="col">LankaID</th>
               <th scope="col">Status</th>
               <th scope="col">Cancel order <i class='fas fa-window-close'></i></th>
               <th scope="col">Order Delivered <i class='fas fa-dolly'></i></i></th>

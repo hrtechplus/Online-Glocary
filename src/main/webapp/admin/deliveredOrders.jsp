@@ -30,7 +30,7 @@
             <th scope="col">Order Date</th>
              <th scope="col">Expected Delivery Date</th>
              <th scope="col">Payment Method</th>
-              <th scope="col">T-ID</th>
+              <th scope="col">LankaID</th>
               <th scope="col">Status</th>
           </tr>
         
