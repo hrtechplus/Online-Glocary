@@ -3,6 +3,13 @@
 <%@include file="footer.jsp" %>
 <html>
 <head>
+<style >
+		@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+	</style>
+  <link rel="stylesheet" href="css/home-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bill.css">
 <title>Bill</title>
 </head>
@@ -27,22 +34,55 @@ try{
 		 
 %>
 
-<h3>Online shopping Bill (Code With V4)</h3>
+<h3>SLIIT GLOCERY CENTER</h3>
 <hr>
-<div class="left-div"><h3>Name:  <%=rs2.getString(1)%></h3></div>
-<div class="right-div-right"><h3>Email:  <%out.println(email); %></h3></div>
-<div class="right-div"><h3>Mobile Number:<%=rs2.getString(20) %></h3></div>  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Name: <%=rs2.getString(1)%></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Email: <%out.println(email); %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Mobile Number: <%=rs2.getString(20) %></h4>
+    </div>
+  </div>
 
-<div class="left-div"><h3>Order Date:  <%=rs2.getString(21) %></h3></div>
-<div class="right-div-right"><h3>Payment Method:  <%=rs2.getString(23) %></h3></div>
-<div class="right-div"><h3>Expected Delivery:  <%=rs2.getString(22) %></h3></div> 
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Order Date: <%=rs2.getString(21) %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Payment Method: <%=rs2.getString(23) %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Expected Delivery: <%=rs2.getString(22) %></h4>
+    </div>
+  </div>
 
-<div class="left-div"><h3>Transaction Id:  <%=rs2.getString(24) %></h3></div>
-<div class="right-div-right"><h3>City:  <%=rs2.getString(17) %></h3></div> 
-<div class="right-div"><h3>Address:  <%=rs2.getString(16) %></h3></div> 
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Transaction Id: <%=rs2.getString(24) %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>City: <%=rs2.getString(17) %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Address: <%=rs2.getString(16) %></h4>
+    </div>
+  </div>
 
-<div class="left-div"><h3>State:  <%=rs2.getString(18) %></h3></div>
-<div class="right-div-right"><h3>Country:  <%=rs2.getString(19) %></h3></div>  
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>State: <%=rs2.getString(18) %></h4>
+    </div>
+    <div class="col-sm-4">
+      <h4>Country: <%=rs2.getString(19) %></h4>
+    </div>
+  </div>
+</div>
+
 
 <hr>
 <% break;} %>
@@ -77,9 +117,18 @@ try{
   <tr>
 <%} %>
 </table>
-<h3>Total:<%out.println(total); %> </h3>
-<a href="continueShopping.jsp"><button class="button left-button">Continue Shopping</button></a>
-<a onclick="window.print();"><button class="button right-button">Print</button></a>
+<div class="row mt-5">
+  <div class="col-12 d-flex justify-content-center">
+    <div class="col-6">
+      <h3>Total: <%out.println(total); %> </h3>
+    </div>
+    <div class="col-6 text-center">
+      <a href="continueShopping.jsp" class="btn btn-primary">Continue Shopping</a>
+      <a onclick="window.print();" class="btn btn-primary">Print</a>
+    </div>
+  </div>
+</div>
+
 <br><br><br><br>
 <%
 
