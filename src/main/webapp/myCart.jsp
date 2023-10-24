@@ -64,7 +64,7 @@ try{
 
           <tr>
             <th scope="col" style="background-color: yellow;">Total: <small class=" fs-6">Rs</small><%out.println(total); %>  </th>
-            
+             <% if(total>0){ %><th scope="col"><a href="addressPaymentForOrder.jsp">Proceed to order</a></th><%} %>
           </tr>
         </thead>
         <thead>

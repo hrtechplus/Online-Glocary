@@ -34,12 +34,12 @@ try{
 		 
 %>
 
-<h3>SLIIT GLOCERY CENTER</h3>
+<h3 class="display-6 fs-2">SLIIT GLOCERY CENTER</h3>
 <hr>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h4>Name: <%=rs2.getString(1)%></h4>
+      <h4 class="">Name: <%=rs2.getString(1)%></h4>
     </div>
     <div class="col-sm-4">
       <h4>Email: <%out.println(email); %></h4>

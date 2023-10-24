@@ -5,9 +5,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
 <link rel="stylesheet" href="../css/ordersReceived-style.css">
 <title>Orders Received</title>
 <style>
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 .th-style
 { width: 25%;}
 </style>
@@ -62,7 +64,7 @@ if("invalid".equals(msg)){
           <td><%=rs.getString(10) %></td>
             <td><%=rs.getString(17) %></td>
             <td><%=rs.getString(3) %></td>
-            <td><i class="fa fa-inr"></i>  <%=rs.getString(5) %></td>
+            <td><i class="fa fa-lkr">Rs</i>  <%=rs.getString(5) %></td>
                 <td><%=rs.getString(6) %></td>
                <td><%=rs.getString(7) %></td>
                 <td><%=rs.getString(8) %></td>
@@ -72,8 +74,8 @@ if("invalid".equals(msg)){
                <td><%=rs.getString(13) %></td>
                <td><%=rs.getString(14) %></td>
                <td><%=rs.getString(15) %></td>
-               <td><a href="cancleOrderAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Cancel <i class='fas fa-window-close'></i></a></td>
-                <td><a href="deliveredOrderAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Delivered <i class='fas fa-dolly'></i></i></a></td>
+               <td><a href="cancleOrderAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Cancel <i class="bi bi-x-lg"></i></a></td>
+                <td><a href="deliveredOrderAction.jsp?id=<%=rs.getString(2)%>&email=<%=rs.getString(1)%>">Delivered <i class="bi bi-check2-circle"></i></a></td>
             </tr>
          <%
 	   }
