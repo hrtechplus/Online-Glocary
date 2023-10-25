@@ -14,7 +14,7 @@
     <div class="container ">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <h1 class=" display-3 fs-4">SLIIT DEGREE GLOCERY</h1>
+          <h1 class=" display-3 fs-4">GROCERY SPARKLY</h1>
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
