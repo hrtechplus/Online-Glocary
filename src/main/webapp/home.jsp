@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>SLIIT DEGREE GLOCERY CENTER</title>
+<title>GROCERY SPARKLY</title>
 <style>
 h3
 {

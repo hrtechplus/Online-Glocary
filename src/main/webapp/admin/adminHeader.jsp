@@ -17,7 +17,7 @@
   <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <h1 class="me-lg-auto text-white display-1 fs-4 ">SLIIT DEGREE GROCERY CENTER [admin]</h1>
+        <h1 class="me-lg-auto text-white display-1 fs-4 ">GROCERY SPARKLY [admin]</h1>
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="addNewProduct.jsp" class="nav-link px-2 text-white"> <i class="bi bi-plus-lg"></i> Add New Product </a></li>
           <li><a href="allProductEditProduct.jsp" class="nav-link px-2 text-white"><i class="bi bi-list mx-1"></i>All Products & Edit Products </a></li>
