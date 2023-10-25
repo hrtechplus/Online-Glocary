@@ -3,7 +3,7 @@
     <div class="container p-4">
       <div class="row justify-content-center">
         <div class="col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">GLOCERY CENTER</h5>
+          <h5 class="text-uppercase">GROCERY SPARKLY</h5>
 
           <p>
 Empowering your everyday grocery needs with innovation and convenience.
