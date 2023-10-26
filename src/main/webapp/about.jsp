@@ -1,5 +1,4 @@
 <%@include file="header.jsp"%>
-<%@include file="footer.jsp"%>
 <%@page errorPage="error.jsp" %>
 <!DOCTYPE html>
 <html lang="en">

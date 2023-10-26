@@ -1,6 +1,5 @@
 <%@page import="java.sql.*" %>
 <%@page import="os.project.connectionProvider" %>
-<%@include file="footer.jsp" %>
 <html>
 <head>
 <style >

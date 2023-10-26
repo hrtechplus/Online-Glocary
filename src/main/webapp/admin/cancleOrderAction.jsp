@@ -11,7 +11,7 @@ try{
 	Connection con=connectionProvider.getcon();
 	Statement st=con.createStatement();
 	st.executeUpdate("update card set status='"+Status+"' where product_id='"+id+"' and email='"+email+"' and address is not NULL");
-	response.sendRedirect("ordersReceived.jsp?msg=cancle");
+	response.sendRedirect("ordersReceived.jsp?msg=cancel");
 }
 catch(Exception e)
 {
